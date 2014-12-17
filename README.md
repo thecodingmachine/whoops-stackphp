@@ -34,7 +34,7 @@ public function __construct(HttpKernelInterface $router, $catchExceptions = true
 
 - **$router**: this is the next router to be called on the Stack
 - **$catchExceptions**: Set to true to catch exception. Set to false to ignore exceptions (for production servers)
-- **$catchErrors**: Set to true to catch raised errors. Set to false to ignore exceptions (for production servers)
+- **$catchErrors**: Set to true to catch raised errors. Set to false to ignore raised errors (for production servers)
 
 Note: `$catchExceptions` and `$catchErrors` can be passed a boolean, a callable (that returns a boolean) or a [ConditionInterface](http://mouf-php.com/packages/mouf/utils.common.conditioninterface/README.md) that evaluates to true or false.
 
