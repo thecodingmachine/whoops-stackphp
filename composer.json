@@ -1,0 +1,36 @@
+{
+	"name" : "mouf/whoops-stackphp",
+	"description" : "This package provides a StackPHP middleware for using the Whoops error handling library",
+	"type" : "library",
+	"authors" : [{
+			"name" : "David Négrier",
+			"email" : "d.negrier@thecodingmachine.com",
+			"homepage" : "http://mouf-php.com"
+		}
+	],
+	"keywords" : [
+		"stackphp",
+		"whoops",
+		"mouf"
+	],
+	"homepage" : "https://github.com/thecodingmachine/whoops-library",
+	"license" : [
+		"MIT"
+	],
+	"require" : {
+		"php" : ">=5.3.0",
+		"symfony/http-kernel" : "~2.0",
+		"mouf/utils.common.conditioninterface": "~2.0",
+		"filp/whoops": "~1.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Whoops\\StackPhp\\" : "src/"
+		}
+	},
+	"extra" : {
+		"mouf" : {
+			"logo" : "logo.png"
+		}
+	}
+}
